@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CatalogoActivity" />
+        <activity android:name=".CompraActivity" />
+        <activity android:name=".StockActivity" />
+        <activity android:name=".GestionAdminActivity" />
+        <activity android:name=".InfoActivity" />
     </application>
 
 </manifest>

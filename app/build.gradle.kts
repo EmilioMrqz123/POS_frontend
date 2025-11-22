@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -37,6 +38,8 @@ android {
 
 dependencies {
     implementation("androidx.gridlayout:gridlayout:1.0.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation(libs.volley)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -15,29 +15,27 @@
         android:padding="16dp">
 
         <ImageView
-            android:id="@+id/car_placeholder.jfif"
+            android:id="@+id/img_coche"
             android:layout_width="match_parent"
             android:layout_height="180dp"
+            android:contentDescription="Vehículo"
             android:scaleType="centerCrop"
-            android:src="@drawable/car_placeholder"
-            android:contentDescription="Imagen del Vehículo" />
+            android:src="@drawable/car_placeholder" />
 
         <TextView
             android:id="@+id/tv_vehiculo_modelo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Mini cooper"
+            android:text="Modelo"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/design_default_color_primary_dark" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_vehiculo_detalles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Marca X | Año 2023 | Motor V6"
+            android:text="Detalles"
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray" />
 
@@ -46,18 +44,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="$ 50,000.00 MXN"
+            android:text="$ 0.00"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="#C62828" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_comprar"
+            android:id="@+id/btn_comprar_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Ver Detalles y Comprar"
-            app:cornerRadius="8dp" />
+            android:text="Ver Detalles y Comprar" />
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

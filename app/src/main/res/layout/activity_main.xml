@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral_variant95"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -65,12 +67,11 @@
                 android:gravity="center"
                 android:background="@color/design_default_color_primary">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@android:drawable/ic_menu_gallery"
-                    android:tint="@android:color/white"
-                    android:contentDescription="Icono de Catálogo" />
+                <ImageButton
+                    android:id="@+id/btn_Catalogo"
+                    android:layout_width="143dp"
+                    android:layout_height="112dp"
+                    android:src="@android:drawable/ic_menu_crop" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,12 +101,11 @@
                 android:gravity="center"
                 android:background="@color/design_default_color_secondary">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@android:drawable/ic_menu_send"
-                    android:tint="@android:color/white"
-                    android:contentDescription="Icono de Compra" />
+                <ImageButton
+                    android:id="@+id/btn_Compra"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@android:drawable/ic_menu_slideshow" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -135,12 +135,11 @@
                 android:gravity="center"
                 android:background="#4CAF50">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@android:drawable/ic_menu_manage"
-                    android:tint="@android:color/white"
-                    android:contentDescription="Icono de Stock" />
+                <ImageButton
+                    android:id="@+id/btn_Stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:src="@android:drawable/ic_menu_manage" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -170,13 +169,11 @@
                 android:gravity="center"
                 android:background="#FF9800">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@android:drawable/ic_dialog_info"
-                    android:contentDescription="Icono de Información"
-                    app:tint="@android:color/white"
-                    tools:ignore="UseAppTint" />
+                <ImageButton
+                    android:id="@+id/btn_Info"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:src="@android:drawable/ic_dialog_info" />
 
                 <TextView
                     android:layout_width="wrap_content"
